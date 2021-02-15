@@ -275,7 +275,7 @@ let board = {
 
 
             if (board.boardTable[board.heightCounter + 1][board.positionX] != 0 || board.boardTable[board.heightCounter + 1][board.positionX + 1] != 0) {
-                if (board.heightCounter <= 2) {
+                if (board.heightCounter <= 1) {
                     let flaga = document.querySelector(".wygryw")
                     console.log(flaga)
                     flaga.style.backgroundImage = 'url("img/go.png")'
@@ -286,6 +286,9 @@ let board = {
                     flaga.style.left = "35.5%"
                     flaga.style.width = "334px"
                     flaga.style.height = "119px"
+
+                    marianna.throwTable[3][10] = 0
+                    marianna.throwTable[3][11] = 0
 
 
                     return true
@@ -310,6 +313,8 @@ let board = {
                     flaga.style.left = "35.5%"
                     flaga.style.width = "334px"
                     flaga.style.height = "119px"
+                    marianna.throwTable[3][10] = 0
+                    marianna.throwTable[3][11] = 0
 
 
                     return true
