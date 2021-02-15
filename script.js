@@ -51,6 +51,7 @@ let board = {
             }
         }
         board.zawirusuj()
+        board.refresh()
         marianna.throwPill()
 
 
@@ -289,7 +290,7 @@ let board = {
 
                     marianna.throwTable[3][10] = 0
                     marianna.throwTable[3][11] = 0
-
+                    marianna.refreshThrow()
 
                     return true
                 }
@@ -315,7 +316,7 @@ let board = {
                     flaga.style.height = "119px"
                     marianna.throwTable[3][10] = 0
                     marianna.throwTable[3][11] = 0
-
+                    marianna.refreshThrow()
 
                     return true
                 }
